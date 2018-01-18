@@ -1,68 +1,140 @@
 *{
 	color: #777777;
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-	width: 960px;
-	margin-left: 40px;
+
 	box-sizing: border-box;
-	background: lightgray;
 }
 
+.clearfix::after{
+	content=””;
+	display: block;
+	clear: both;
+	}
+
 header {
-	background: #ffffff;
 	font-family: Georgia, Times, 'Times New Roman',  serif;
+	background: #ffffff;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.headerContent {
+	width: 960px;
+	height: 80px;
+	margin: 0 auto;
+	position: relative;
 }
 
 footer {
 	background: #666666;
+	text-align: center;
+	margin-top: 500px;
 }
 
 body{
-	width: 960px;
-	align-content: center;
+	background: lightgray;
+	margin: 0;
+	position: relative;
+	bottom: 0;
 }
 
-.name {
-	background: #4aaaa5;
-	padding: 5px;
+.entireContent {
+	margin: 0 auto;
+	width: 960px;
+	position: relative;
 }
 
 h1 {
 	color: #ffffff;
+	background: #4aaaa5;
+	padding: 20px;
+	width: 260px;
+	height: 80px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	margin: 0;
+	
 }
 
 h2 {
 	color: #4aaaa5;
+	width: 135x;
+	font-size: 2em;
+	margin-top: 20px;
+
 }
 
 h3 {
 	color: #4aaaa5;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	font-size: 1.5em;
 }
 
 p {
 	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	line-height: 2;
+}
+
+hr {
+	border: none;
+	height: 2.5px;
+	background-color: lightgray;
+	}
+
+.sidebar hr {
+	width: 215px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.headerLinks {
+	position: absolute;
+	right: 0;
+	height: 60px;
+	width: 260px;
+	padding: 30px;
+	text-align: center;
 }
 
 .icons {
-	width: 75px;
-	height: 75px;
+	width: 65px;
+	height: 65px;
+	display: block;
+	float: left;
+	margin: 5px;
+}
+
+.iconGroup {
+	height: 80px;
+	display: inline-block;
 }
 
 #profilePic {
 	float: left;
-	width: 150px;
-	height: 150px;
-	margin: 10px;
+	width: 160px;
+	height: 160px;
+	margin-right: 10px;
+	margin-top: 11px;
 }
 
 .mainContent {
-	float: left;
+	margin: 0;
 	padding: 20px;
 	width: 650px;
 	background: #ffffff;
+	position: absolute;
+	left: 0;
 }
 
 .sidebar {
-	float: right;
 	width: 270px;
+	height: 180px;
+	padding: 20px;
 	background: #ffffff;
+	position: absolute;
+	right: 0;
+	text-align: center;
 }
