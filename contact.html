@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<meta charset="UTF-8">
@@ -11,45 +13,55 @@
 	<title>About Me</title>
 </head>
 <body>
+
 	<header>
-		<div class="name">
+		<div class="headerContent">
+			
 			<h1>Merek Smith</h1>
-		</div>
-		
-		<div class="headerLinks">
-			<a href="index.html">About</a>
-			<a href="portfolio.html">Portfolio</a>
-			<a href="#">Contact</a>
+			
+			<nav class="headerLinks">
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="#">Contact</a>
+			</nav>
 		</div>
 	</header>
 
-	<div class="mainContent">
-		<h2>Contact</h2>
-		<br>
-		<form action="mailto:mereksmith@hotmail.com" 			method="post" enctype="text/plain">
-			Name: <br>
-			<input type="text" name="name"><br><br>
-			E-mail: <br>
-			<input type="text" name="mail"><br><br>
-			Message: <br>
-			<input type="text" name="message" 	size="50"><br><br>
-			<input type="submit" value="Submit">
-		</form>
-	</div>
-		
-	<div class="sidebar">
-		<h3>Connect With Me</h3>
-		<br>
-		<a href="https://github.com/MerekSmith">
-			<img src="assets/images/github_icon.png" class="icons">
-		</a>
-		<a href="https://www.linkedin.com/in/merek-smith/">
-			<img src="assets/images/linkedin_icon.png" class="icons">
-		</a>
-		<a href="https://stackoverflow.com/users/9142901/merek-smith">
-			<img src="assets/images/stackoverflow_icon.png" class="icons">
-		</a>
-	</div>
+	<section class="entireContent">
+		<div class="mainContent">
+			<h2>Contact</h2>
+			<hr>
+			<br>
+			<form action="mailto:mereksmith@hotmail.com" 			method="post" enctype="text/plain">
+				Name: <br>
+				<input type="text" name="name"><br><br>
+				E-mail: <br>
+				<input type="text" name="mail"><br><br>
+				Message: <br>
+				<input type="text" name="message" 	size="50"><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+		<div class="sidebar">
+			<h3>Connect With Me</h3>
+			<hr>
+			
+			<div class="iconGroup">
+				<a href="https://github.com/MerekSmith">
+					<img src="assets/images/github_icon.png" class="icons" class="icon1">
+				</a>
+				<a href="https://www.linkedin.com/in/merek-smith/">
+					<img src="assets/images/linkedin_icon.png" class="icons" class="icon2">
+				</a>
+				<a href="https://stackoverflow.com/users/9142901/merek-smith">
+					<img src="assets/images/stackoverflow_icon.png" class="icons" class="icon3">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	
 
 	<footer>
 		@Copyright 2018 Merek Smith
