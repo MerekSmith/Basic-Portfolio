@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://use.fontawesome.com/c805731f1c.js"></script>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +15,14 @@
 
 	<title>About Me</title>
 </head>
+
 <body>
 
 	<header>
 		<div class="headerContent">
-			
+
 			<h1>Merek Smith</h1>
-			
+
 			<nav class="headerLinks">
 				<a href="index.html">About</a>
 				<a href="portfolio.html">Portfolio</a>
@@ -32,21 +36,31 @@
 			<h2>Contact</h2>
 			<hr>
 			<br>
-			<form action="mailto:mereksmith@hotmail.com" 			method="post" enctype="text/plain">
-				Name: <br>
-				<input type="text" name="name"><br><br>
-				E-mail: <br>
-				<input type="text" name="mail"><br><br>
-				Message: <br>
-				<input type="text" name="message" 	size="50"><br><br>
-				<input type="submit" value="Submit">
+			<form action="mailto:mereksmith@hotmail.com" method="post" enctype="text/plain">
+				<i class="fa fa-user-o" aria-hidden="true"></i> Name
+				<br>
+				<input type="text" name="name" placeholder="John Smith">
+				<br>
+				<br>
+				<i class="fa fa-envelope-o" aria-hidden="true"></i> Email
+				<br>
+				<input type="text" name="mail" placeholder="example@gmail.com">
+				<br>
+				<br>
+				<i class="fa fa-file-o" aria-hidden="true"></i> Message
+				<br>
+				<textarea name="message" id="messageField"></textarea>
+				<!-- <input id="messageField" type="text" name="message"> -->
+				<br>
+				<br>
+				<input id="submitButton" type="submit" value="Submit">
 			</form>
 		</div>
 
 		<div class="sidebar">
 			<h3>Connect With Me</h3>
 			<hr>
-			
+
 			<div class="iconGroup">
 				<a href="https://github.com/MerekSmith">
 					<img src="assets/images/github_icon.png" class="icons" class="icon1">
@@ -61,12 +75,13 @@
 		</div>
 	</section>
 
-	
+
 
 	<footer>
 		@Copyright 2018 Merek Smith
 	</footer>
 
-	
+
 </body>
+
 </html>
